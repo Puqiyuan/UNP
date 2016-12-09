@@ -1,3 +1,18 @@
+/*
+  Before you running this program, you must running server end 
+  program firstly, named p41.c in the same directory. So your 
+  output should be like this:
+
+  Server end:
+  pqy@sda1:~/UNP/bin$ sudo ./p41 //listening
+
+  Client end:
+  pqy@sda1:~/UNP/bin$ ./p36 127.0.0.1
+  Fri Dec  9 21:59:13 2016
+  
+  
+ */
+
 #include "unp.h"
 
 int main(int argc, char **argv)
