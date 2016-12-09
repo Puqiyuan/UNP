@@ -11,9 +11,9 @@ directory under top directory but only if these chapter that there are example p
 existing. Maybe some other organization will appear in the future because of learning
 arrangement.
 
-The lib folder is from author's source codes. The other programs are from the author's
-book, but I rewrite and test it for learning and understanding aims. The exercise folder
-do by myself.
+The lib folder is from author's source codes. The other programs in each chapter directory
+are from the author's book as sample programs, but I rewrite and test it for learning and
+understanding aims. The exercise folder do by myself.
 
 The two directories under chapter directory, one is examples_programs including all
 example programs in this chapter, every program is named like "pxx.c", where "p" is the
