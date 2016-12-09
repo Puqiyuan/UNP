@@ -24,4 +24,4 @@ In each chapter directory, there are two directories existing in any chapter dir
 one is example_programs, it is for put the example programs for testing and rewriting. The
 other directory is exercise, for containing exercise problems at the end of each chapter.
 
-All executable are added to bin folder.
+All executable files are added to bin folder.
