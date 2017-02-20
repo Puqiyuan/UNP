@@ -11,7 +11,7 @@ LDIR=lib
 LIBS=-lunp
 CFLAGS2=-L $(LDIR)
 .SECONDARY: $(OBJS)
-all: $(BIN)/p36 $(BIN)/p41
+all: $(BIN)/p36 $(BIN)/p41 $(BIN)/p108
 
 
 $(ODIR)/%.o: $(introCODES)/%.c 
@@ -21,6 +21,6 @@ $(BIN)/%: $(ODIR)/%.o
 	gcc -o $@ $^ $(CFLAGS2) $(LIBS)
 
 clean:
-	rm -f $(BIN)/* && rm -f $(ODIR)/*
+	rm -f $(BIN)/* && rm -f $(ODIR)/* && rm -f $(introCODES)/*~
 
 
