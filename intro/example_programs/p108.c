@@ -1,3 +1,10 @@
+/*
+  The test result:
+  pqy@sda1:~/UNP/bin$ ./p108 
+  x86_64-unknown-linux-gnu: little-end
+ */
+
+
 #include "unp.h"
 
 int main(int argc, char **argv)
