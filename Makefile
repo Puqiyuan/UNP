@@ -1,6 +1,6 @@
 IDIR=lib
 CC=gcc
-CFLAGS1=-I $(IDIR)
+CFLAGS1=-I $(IDIR) 
 introCODES=intro/example_programs
 
 BIN=bin
