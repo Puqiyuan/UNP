@@ -1,6 +1,6 @@
 IDIR=lib
 CC=gcc
-CFLAGS1=-I $(IDIR) 
+CFLAGS1=-I $(IDIR)
 introCODES=intro/example_programs
 introExer=intro/exercise
 
@@ -10,9 +10,9 @@ ODIR=obj
 LDIR=lib
 
 LIBS=-lunp
-CFLAGS2=-L $(LDIR)
+CFLAGS2=-L $(LDIR) -pthread
 .SECONDARY: $(OBJS)
-all: $(BIN)/p36 $(BIN)/p41 $(BIN)/p108 $(BIN)/e1.3 $(BIN)/e1.4
+all: $(BIN)/p36 $(BIN)/p41 $(BIN)/p108 $(BIN)/e1.3 $(BIN)/e1.4 $(BIN)/daytimetcpsrv1
 
 
 $(ODIR)/%.o: $(introCODES)/%.c 
