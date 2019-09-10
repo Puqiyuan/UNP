@@ -1,5 +1,6 @@
 #include "unp.h"
 #include <time.h>
+#include <unistd.h>
 
 static int listenfd;
 static pthread_t tid;
@@ -11,18 +12,19 @@ void *process(void *connfd)
 {
 	time_t ticks = time(NULL);
 	char buff[MAXLINE];
-	
-	snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
+
+	sleep(10);
+	snprintf(buff, sizeof(buff), "Thread %d: %.24s\r\n", cur_thd, ctime(&ticks));
 	Write(*(int*)connfd, buff, strlen(buff));
 	Close(*(int*)connfd);
-
+	
 	int res;
 	pthread_exit((void*)&res);
 }
 
 void *front_reception()
 {
-	if (cur_thd == MAX_THREAD)
+	if (cur_thd == MAX_THREAD - 2)
 		cur_thd = 0;
 	int connfd;
 	
